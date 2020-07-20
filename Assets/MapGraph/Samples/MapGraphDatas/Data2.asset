@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbcf8db800c9db946b894a29a52180cb, type: 3}
+  m_Name: Data2
+  m_EditorClassIdentifier: 
+  nodedata:
+  - roomType: {fileID: 11400000, guid: b1be6ab334136a34fa9a55994d71ea94, type: 2}
+    NodeGUID: 14f8376f-ebee-4d22-a8cb-1c766c882909
+    MapText: Room306
+    Position: {x: 36, y: 408}
+    inputPorts:
+    - portName: 306In
+      direction: 0
+    outputPorts:
+    - portName: 306Wall
+      direction: 1
+  - roomType: {fileID: 11400000, guid: b1be6ab334136a34fa9a55994d71ea94, type: 2}
+    NodeGUID: b8a61fd2-c487-40af-ae45-8e2d4bdc4424
+    MapText: Room306
+    Position: {x: 55, y: 134}
+    inputPorts:
+    - portName: 306In
+      direction: 0
+    outputPorts:
+    - portName: 306Wall
+      direction: 1
+  linkdata:
+  - FromNodeGuid: 14f8376f-ebee-4d22-a8cb-1c766c882909
+    outPortName: 306Wall
+    TargetNodeGuid: b8a61fd2-c487-40af-ae45-8e2d4bdc4424
+    inPortName: 306In
+  - FromNodeGuid: b8a61fd2-c487-40af-ae45-8e2d4bdc4424
+    outPortName: 306Wall
+    TargetNodeGuid: 14f8376f-ebee-4d22-a8cb-1c766c882909
+    inPortName: 306In

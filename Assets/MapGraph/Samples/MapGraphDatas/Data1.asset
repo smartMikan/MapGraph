@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbcf8db800c9db946b894a29a52180cb, type: 3}
+  m_Name: Data1
+  m_EditorClassIdentifier: 
+  nodedata:
+  - roomType: {fileID: 11400000, guid: e617e7193c585d84da39d6fc2f84e589, type: 2}
+    NodeGUID: 72e9bbfa-a3ee-4c41-89c5-f98c199a97e4
+    MapText: F3 stage
+    Position: {x: 147, y: -38}
+    inputPorts:
+    - portName: 306Out
+      direction: 0
+    outputPorts:
+    - portName: F3Out
+      direction: 1
+  - roomType: {fileID: 11400000, guid: 85e248af2898999409762c1346aaf173, type: 2}
+    NodeGUID: 32d00083-3e34-4fe7-a995-00635374c678
+    MapText: Room103
+    Position: {x: 319, y: 286}
+    inputPorts:
+    - portName: 103In
+      direction: 0
+    outputPorts: []
+  - roomType: {fileID: 11400000, guid: b1be6ab334136a34fa9a55994d71ea94, type: 2}
+    NodeGUID: abb826b8-eb7e-42f0-b50d-921841615836
+    MapText: Room306
+    Position: {x: -178, y: -174}
+    inputPorts: []
+    outputPorts:
+    - portName: 306Wall
+      direction: 1
+    - portName: 306In
+      direction: 1
+  - roomType: {fileID: 11400000, guid: c0d7c051fc747334090751ecd6e6e6d6, type: 2}
+    NodeGUID: bc65b9bd-73c5-422e-87fd-b63da34c42dc
+    MapText: Room305
+    Position: {x: 252, y: -171}
+    inputPorts:
+    - portName: 305Wall
+      direction: 0
+    outputPorts: []
+  - roomType: {fileID: 11400000, guid: d4afc48f257694c488f6ed1f8438b649, type: 2}
+    NodeGUID: 0c70b37d-f18d-45cd-b39a-e9a27d28237c
+    MapText: F2 stage
+    Position: {x: 315, y: 135}
+    inputPorts:
+    - portName: F2Out
+      direction: 0
+    outputPorts: []
+  - roomType: {fileID: 11400000, guid: 979df504de0fa7e489e6464735911a99, type: 2}
+    NodeGUID: fcea964a-ad74-4c8e-bfc7-33b2e7b82d55
+    MapText: F1 stage
+    Position: {x: 48, y: 287}
+    inputPorts: []
+    outputPorts:
+    - portName: 103Out
+      direction: 1
+  linkdata:
+  - FromNodeGuid: abb826b8-eb7e-42f0-b50d-921841615836
+    outPortName: 306Wall
+    TargetNodeGuid: bc65b9bd-73c5-422e-87fd-b63da34c42dc
+    inPortName: 305Wall
+  - FromNodeGuid: abb826b8-eb7e-42f0-b50d-921841615836
+    outPortName: 306In
+    TargetNodeGuid: 72e9bbfa-a3ee-4c41-89c5-f98c199a97e4
+    inPortName: 306Out
+  - FromNodeGuid: 72e9bbfa-a3ee-4c41-89c5-f98c199a97e4
+    outPortName: F3Out
+    TargetNodeGuid: 0c70b37d-f18d-45cd-b39a-e9a27d28237c
+    inPortName: F2Out
+  - FromNodeGuid: fcea964a-ad74-4c8e-bfc7-33b2e7b82d55
+    outPortName: 103Out
+    TargetNodeGuid: 32d00083-3e34-4fe7-a995-00635374c678
+    inPortName: 103In

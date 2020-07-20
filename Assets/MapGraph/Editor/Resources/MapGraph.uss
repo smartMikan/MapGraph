@@ -1,0 +1,17 @@
+GridBackground{
+    --grid-background-color : #292723;
+    --line-color : rgba(255, 1, 1, 0.5);
+    --thick-line-color : rgba(255,100,200,0.5);
+}
+
+
+ObjectField{
+    min-width :300px;
+    max-width :300px;
+}
+
+.unity-base-field__label{
+    min-width :100px;
+    max-width :100px;
+    color : #000000;
+}
